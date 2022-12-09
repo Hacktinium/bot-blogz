@@ -2,7 +2,7 @@ import BlogList from "./BlogList";
 import useFetch from "./hooks/useFetch";
 
 const Home = () => {
-	const { data: blogs, isPending, error } = useFetch("http://localhost:3005/api/blogs");
+	const { data: blogs, isPending, error } = useFetch("https://bot-blogs-api.onrender.com/blogs");
 
 	// JSX
 	return (

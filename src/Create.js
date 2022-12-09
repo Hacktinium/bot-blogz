@@ -14,7 +14,7 @@ const Create = () => {
 
 		setIsPending(true);
 
-		fetch("http://localhost:3005/api/blogs", {
+		fetch("https://bot-blogs-api.onrender.com/api/blogs", {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify(blog),

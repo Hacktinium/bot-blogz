@@ -3,12 +3,12 @@ import useFetch from "./hooks/useFetch";
 
 const BlogDetails = () => {
 	const { id } = useParams();
-	const { data: blog, isPending, error } = useFetch(`http://localhost:3005/api/blogs/${id}`);
+	const { data: blog, isPending, error } = useFetch(`https://bot-blogs-api.onrender.com/api/blogs/${id}`);
 	console.log(blog)
 	const history = useHistory();
 
 	const handleClick = () => {
-		fetch(`http://localhost:3005/api/blogs/${id}`, {
+		fetch(`https://bot-blogs-api.onrender.com/api/blogs/${id}`, {
 			method: "DELETE",
 		}).then(() => {
 			history.push("/");

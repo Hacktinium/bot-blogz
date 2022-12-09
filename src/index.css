@@ -20,7 +20,7 @@
 	padding: 20px;
 	display: flex;
 	align-items: center;
-	max-width: 600px;
+	max-width: 100vw;
 	margin: 0 auto;
 	border-bottom: 1px solid var(--off-white);
 }
@@ -100,11 +100,16 @@
 .create textarea,
 .create select {
 	width: 100%;
+	max-width: 100%;
+	min-width: 100%;
 	padding: 6px 10px;
 	margin: 10px 0;
 	border: 1px solid #ddd;
 	box-sizing: border-box;
 	display: block;
+}
+.create textarea {
+	min-height: 300px;
 }
 .create button {
 	background: var(--bot-blog-blue);

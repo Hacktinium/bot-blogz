@@ -4,7 +4,6 @@ import useFetch from "./hooks/useFetch";
 const BlogDetails = () => {
 	const { id } = useParams();
 	const { data: blog, isPending, error } = useFetch(`https://bot-blogs-api.onrender.com/api/blogs/${id}`);
-	console.log(blog)
 	const history = useHistory();
 
 	const handleClick = () => {
@@ -20,11 +19,13 @@ const BlogDetails = () => {
 			{error && <div>{error}</div>}
 			{isPending && <div>Loading...</div>}
 			{blog && (
-				<article>
-					<h2>{blog.title}</h2>
-					<img src={blog.image} alt={blog.title}/>
+				<article className="article">
+					<div>
+						<h2>{blog.title}</h2>
 					<p>Written by {blog.author}</p>
-					<div>{blog.body}</div>
+					</div>
+					<img src={blog.image} alt={blog.title}/>
+					<div className="blog-body">{blog.body}</div>
 					{/* <button onClick={handleClick}>Delete</button> */}
 				</article>
 			)}

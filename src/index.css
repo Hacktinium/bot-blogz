@@ -8,12 +8,12 @@
 	--dark-grey: #333;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap');
 
 /* base styles */
 * {
 	margin: 0;
-	font-family: "Quicksand";
+	font-family: 'Space Grotesk', sans-serif;
 	color: var(--dark-grey);
 }
 .navbar {

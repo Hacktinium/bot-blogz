@@ -14,6 +14,7 @@ Start simple and get your first iteration MVP of your app working as your first 
 
 
 ---------------------
+## Deployed here: [bot-blogz.onrender.com](https://bot-blogz.onrender.com) 
 
 ## backend: 
 https://github.com/Hacktinium/bot-blogz-backend
